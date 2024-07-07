@@ -1,0 +1,5 @@
+FROM rabbitmq:3.9-alpine
+
+COPY rabbitmq_config.conf /etc/rabbitmq/rabbitmq.config
+
+CMD [ "rabbitmq-server"]
